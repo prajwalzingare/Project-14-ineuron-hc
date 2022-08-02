@@ -1,0 +1,42 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+/* navbar desighn  */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10%;
+    align-items: center;
+}
+
+nav .logo img {
+    height: 45px;
+    width: 120px;
+}
+
+.line-1 {
+    height: 2.5px;
+    width: 30%;
+    background: black;
+    margin-left: 25rem;
+}
+
+.list-items ul {
+    list-style: none;
+    display: flex;
+    /* padding: 10px; */
+}
+
+.list-items ul li {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.list-items ul .active {
+    font-weight: bold;
+}
