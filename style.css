@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #f5f2f0;
+    overflow: hidden;
+}
 
 /* navbar desighn  */
 
@@ -39,4 +43,182 @@ nav .logo img {
 
 .list-items ul .active {
     font-weight: bold;
+}
+
+/* main section  */
+
+.main-left img {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+.main-right .heading {
+    position: absolute;
+    left: 45%;
+    top: 156px;
+
+}
+
+.heading h1 {
+    font-size: 7rem;
+    font-weight: 900;
+    color: #333333;
+}
+
+.main-right .heading>h1 {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.heading>h1::after {
+    content: "";
+    width: 50px;
+    height: 12px;
+    display: inline-block;
+    border: 2px solid #898888;
+    margin-bottom: 25px;
+}
+
+.heading div {
+    margin-left: 110px;
+    margin-top: -30px;
+    color: #333333;
+    display: flex;
+    align-items: center;
+}
+
+.heading div p {
+    font-size: 1.5rem;
+    font-weight: normal;
+    line-height: 30px;
+    color: #898888;
+    padding-left: 40px;
+    padding-top: 30px;
+
+}
+
+.heading div h1::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #333333;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+.main-right .btn-heading {
+    position: absolute;
+    right: 0;
+    bottom: -70px;
+    right: -190px;
+}
+
+.main-right .btn-heading button {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 17px 78px;
+    border: none;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.main-right .social-icons {
+    position: relative;
+    left: 97rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.main-right .social-icons img {
+    width: 20px;
+}
+
+.main-right .social-icons img:nth-child(2) {
+    width: 16px;
+}
+
+.main-right .social-icons img:nth-child(4) {
+    width: 20px;
+}
+
+/* bottm dot line section  */
+.bottom ul {
+    position: absolute;
+    bottom: 3rem;
+    left: 45rem;
+}
+
+.bottom ul li {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.bottom ul li>p {
+    padding-left: 20px;
+    font-size: 1.3rem;
+}
+
+.bottom .vertical-line {
+    height: 95%;
+    width: 2px;
+    background-color: black;
+    position: absolute;
+    left: 29px;
+    top: 22px;
+    z-index: -1;
+}
+
+.dot {
+    height: 21px;
+    width: 21px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.bottom .active {
+    height: 21px;
+    width: 21px;
+    background-color: rgb(5, 5, 5);
+    border-radius: 50%;
+    display: inline-block;
+
+}
+
+
+/* bottom qoute section  */
+.qoute {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0rem;
+    left: 60rem;
+
+}
+
+.qoute .qoute-icon {
+    font-size: 60px;
+}
+
+.qoute p {
+    margin-bottom: 10px;
+}
+
+.qoute img {
+    height: 259px;
+    width: 100%;
+}
+
+.bottom .arrow-img {
+    position: absolute;
+    left: 94rem;
+    bottom: 20px;
 }
