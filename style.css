@@ -286,6 +286,11 @@ nav .logo img {
     margin-bottom: 10px;
 }
 
+.qoute>div {
+    height: 15rem;
+    width: 15rem;
+}
+
 .qoute img {
     height: 100%;
     width: 100%;
