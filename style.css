@@ -45,6 +45,22 @@ nav .logo img {
     font-weight: bold;
 }
 
+@media screen and (max-width:900px) {
+    nav {
+        overflow-x: auto;
+    }
+
+    .line-1 {
+        display: none;
+    }
+
+    .list-items ul li {
+        padding: 15px;
+        cursor: pointer;
+    }
+
+}
+
 /* main section  */
 
 .main-left img {
@@ -126,6 +142,30 @@ nav .logo img {
     cursor: pointer;
 }
 
+
+@media screen and (max-width:1000px) {
+    .main-right .heading {
+        position: absolute;
+        left: 0%;
+        top: 156px;
+
+    }
+
+    .heading h1 {
+        font-size: 5rem;
+
+    }
+
+    .main-right .btn-heading {
+        position: absolute;
+        left: 1rem;
+        bottom: -70px;
+
+    }
+
+}
+
+/* social icons  */
 .main-right .social-icons {
     position: relative;
     left: 97rem;
@@ -146,6 +186,27 @@ nav .logo img {
 
 .main-right .social-icons img:nth-child(4) {
     width: 20px;
+}
+
+@media screen and (max-width:1000px) {
+    .main-right .social-icons {
+
+        left: 10rem;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+
+    }
+
+    .bottom .arrow-img {
+        display: none;
+    }
+
+    .main-left img {
+        display: none;
+    }
+
 }
 
 /* bottm dot line section  */
@@ -193,6 +254,19 @@ nav .logo img {
 
 }
 
+@media screen and (max-width:1000px) {
+    .bottom ul {
+        left: 4rem;
+        bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .bottom ul {
+        left: 0rem;
+        bottom: 1rem;
+    }
+}
 
 /* bottom qoute section  */
 .qoute {
@@ -213,12 +287,25 @@ nav .logo img {
 }
 
 .qoute img {
-    height: 259px;
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .bottom .arrow-img {
     position: absolute;
     left: 94rem;
     bottom: 20px;
+}
+
+@media screen and (max-width:1000px) {
+    .qoute {
+        left: 20rem;
+        bottom: 0px;
+    }
+
+    .qoute>div {
+        height: 10rem;
+        width: 10rem;
+    }
 }
